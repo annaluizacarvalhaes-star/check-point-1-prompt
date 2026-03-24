@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&display=swap');
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #e040a0;
+  --color-primary-hover: #c03080;
+  --color-primary-fixed: #ffd6ee;
+  
+  --color-secondary: #7c52aa;
+  --color-secondary-fixed: #eedcff;
+  
+  --color-tertiary: #0096cc;
+  --color-tertiary-fixed: #c8eaff;
+  
+  --color-background: #fef7ff;
+  --color-surface: #ffffff;
+  --color-on-surface: #2e1a28;
+  --color-on-surface-variant: #604868;
+
+  --radius-lg: 1rem;
+  --radius-xl: 2rem;
+  --radius-full: 9999px;
+
+  --shadow-pink: 0 4px 16px rgba(224, 64, 160, 0.2);
+  --shadow-pink-lg: 0 8px 32px rgba(224, 64, 160, 0.15);
+  --shadow-purple: 0 4px 16px rgba(124, 82, 170, 0.15);
+  --shadow-blue: 0 4px 16px rgba(0, 150, 204, 0.15);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased;
+  }
+}
+
+.bouncy-spring {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bouncy-spring:hover {
+  transform: scale(1.05);
+}
+
+.bouncy-spring:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Candy Coffee",
+  "description": "Um refúgio neon para quem ama cafeína, estética impecável e doçura.",
+  "requestFramePermissions": ["geolocation"]
+}
